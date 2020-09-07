@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Brandastic.com
+ *
+ * @category    Brandastic
+ * @package     Brandastic_Newsletter
+ * @copyright   Copyright (c) 2019-2020 brandastic. All rights reserved. (http://www.brandastic.com/)
+ * @license     https://www.brandastic.com/LICENSE.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="brandastic_newsletter" translate="label" sortOrder="50">
+            <label>Brandastic</label>
+        </tab>
+        <section id="brandastic_newsletter" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1000" translate="label">
+            <class>separators-top</class>
+            <label>Newsletter Settings</label>
+            <tab>brandastic_newsletter</tab>
+            <resource>Brandastic_Newsletter::newsletter_config</resource>
+            <group id="brandastic_newsletter" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Status</label>
+                <field id="brandastic_newsletter_status" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                    <label>Enable / Disable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>enable coupon code functionality</comment>
+                </field>
+                <field id="brandastic_newsletter_salesrule" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+                    <label>Select Sales Rule</label>
+                    <comment>add salesrule id</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

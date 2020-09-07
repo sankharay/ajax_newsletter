@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Brandastic.com
+ *
+ * @category    Brandastic
+ * @package     Brandastic_Newsletter
+ * @copyright   Copyright (c) 2019-2020 brandastic. All rights reserved. (http://www.brandastic.com/)
+ * @license     https://www.brandastic.com/LICENSE.txt
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="newsletter_head_components">
+            <block class="Magento\Framework\View\Element\Js\Components" name="ajax_newsletter_subscription" template="Brandastic_Newsletter::newsletter-subscription.phtml"/>
+        </referenceBlock>
+    </body>
+</page>
